@@ -1,0 +1,463 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EAGLE STARS FILM</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#070707;
+color:#fff;
+}
+
+header{
+background:#000;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:2px solid gold;
+}
+
+header h2{
+color:gold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00d26a;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200") center/cover;
+}
+
+.hero h1{
+font-size:55px;
+color:gold;
+}
+
+.hero p{
+margin:20px auto;
+max-width:700px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:gold;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#00d26a;
+color:white;
+}
+
+section{
+padding:70px 8%;
+}
+
+.title{
+text-align:center;
+color:gold;
+margin-bottom:40px;
+}
+
+.about{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111;
+padding:25px;
+border:1px solid #00d26a;
+border-radius:15px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px gold;
+}
+
+.slider{
+width:100%;
+overflow:hidden;
+}
+
+.slide-track{
+display:flex;
+width:calc(250px * 8);
+animation:scroll 18s linear infinite;
+}
+
+.slide{
+width:250px;
+margin:10px;
+}
+
+.slide img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:10px;
+border:3px solid gold;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0);}
+100%{transform:translateX(-1000px);}
+}
+
+.movies{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.movie{
+background:#111;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+
+.movie img{
+width:100%;
+border-radius:10px;
+}
+
+.movie a{
+display:block;
+margin-top:15px;
+text-decoration:none;
+background:gold;
+padding:10px;
+color:black;
+font-weight:bold;
+border-radius:20px;
+}
+
+.director{
+text-align:center;
+}
+
+.director img{
+width:250px;
+border-radius:50%;
+border:5px solid gold;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#000;
+border-top:2px solid gold;
+margin-top:40px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h2>EAGLE STARS FILM</h2>
+
+<nav>
+<a href="#about">About</a>
+<a href="#actors">Actors</a>
+<a href="#movies">Movies</a>
+<a href="#director">Director</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>EAGLE STARS FILM</h1>
+
+<p>Professional Film Production Company</p>
+
+<p>Founded: <b>18th October, 2017</b></p>
+
+<a href="#application" class="btn">Apply Now</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<div class="card">
+<h3>Who We Are</h3>
+<p>Eagle Stars Film is a creative film production company dedicated to producing quality African movies, documentaries, music videos and animations.</p>
+</div>
+
+<div class="card">
+<h3>Our Vision</h3>
+<p>To inspire the world with outstanding storytelling, creativity and cinematic excellence.</p>
+</div>
+
+<div class="card">
+<h3>Application</h3>
+<p>Interested in joining our team? Contact us through WhatsApp using the chat button below.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="actors">
+
+<h2 class="title">Our Actors</h2>
+
+<div class="slider">
+
+<div class="slide-track">
+
+<div class="slide"><img src="EAGLE STARS WEB/Actor 1.png"> <p>Ilugo Bianca </p></div>
+<div class="slide"><img src="EAGLE STARS WEB/actor22.png"> <p>ISHIEKWENE SERAH GOLD </p></div>
+<div class="slide"><img src="EAGLE STARS WEB/Naomi.png"><p>ADDISION NAOMI </p></div>
+<div class="slide"><img src="EAGLE STARS WEB/CANNDID.jpeg"><p>IDEGWU LUCKY CANDID</p></div>
+<div class="slide"><img src="EAGLE STARS WEB/SILEVR.png"><p>IDIEMO SYLVESTER  </p></div>
+<div class="slide"><img src="EAGLE STARS WEB/Happiness.png"><p>ONOME HAPPINESS </p></div>
+<div class="slide"><img src="EAGLE STARS WEB/ANDAZ.png"><p>YUSUF ANDAZ </p></div>
+<div class="slide"><img src="EAGLE STARS WEB/And.jpeg"><p>OBIRE Andrew </p></div>
+<div class="slide"><img src="EAGLE STARS WEB/Isaac.png"><p>ISAAC</p></div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Application Section -->
+<section id="application">
+
+<h2 class="title">New Intake Application</h2>
+
+<div class="card" style="max-width:700px; margin:auto;">
+
+<form action="#" method="post">
+
+<label>Full Name</label><br>
+<input type="text" name="fullname" placeholder="Enter your full name" required>
+
+<br><br>
+
+<label>Email Address</label><br>
+<input type="email" name="email" placeholder="Enter your email" required>
+
+<br><br>
+
+<label>Phone Number</label><br>
+<input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+<br><br>
+
+<label>Gender</label><br>
+<select name="gender" required>
+<option value="">Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<br><br>
+
+<label>State of Origin</label><br>
+<input type="text" name="state" placeholder="State of Origin">
+
+<br><br>
+
+<label>City</label><br>
+<input type="text" name="city" placeholder="Current City">
+
+<br><br>
+
+<label>Position Applying For</label><br>
+<select required>
+<option>Select Position</option>
+<option>Actor</option>
+<option>Actress</option>
+<option>Director</option>
+<option>Script Writer</option>
+<option>Cinematographer</option>
+<option>Video Editor</option>
+<option>Sound Engineer</option>
+<option>Make-up Artist</option>
+<option>Costume Designer</option>
+<option>Production Assistant</option>
+<option>Animator</option>
+</select>
+
+<br><br>
+
+<label>Years of Experience</label><br>
+<input type="number" min="0" placeholder="0">
+
+<br><br>
+
+<label>Tell Us About Yourself</label><br>
+<textarea rows="6" placeholder="Write a short biography..." required></textarea>
+
+<br><br>
+
+<label>Upload Headshot</label><br>
+<input type="file">
+
+<br><br>
+
+<label>Upload CV</label><br>
+<input type="file">
+
+<br><br>
+
+<button type="submit" class="btn">Submit Application</button>
+
+</form>
+
+</div>
+
+</section>
+```
+
+
+
+<section id="movies">
+
+<h2 class="title">Latest Movies</h2>
+
+<div class="movies">
+
+<div class="movie">
+<img src="EAGLE STARS WEB/THUMAIL.jpg">
+<h3>Movie Poster</h3>
+<a href="https://youtu.be/63vfsg0cfGw?si=9CKuRewWUsYf1Zto" target="_blank">Watch on YouTube</a>
+</div>
+
+<div class="movie">
+<img src="EAGLE STARS WEB/last girl.png">
+<h3>Movie Poster</h3>
+<a href="https://youtu.be/fjs8qVnNqX8?si=ucCzKAXDjtmistm0" target="_blank">Watch on YouTube</a>
+</div>
+
+<div class="movie">
+<img src="EAGLE STARS WEB/design.png">
+<h3>Movie Poster</h3>
+<a href="https://www.youtube.com/" target="_blank">COMING SOON</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="director">
+
+<h2 class="title">Director</h2>
+
+<div class="director">
+
+<img src="EAGLE STARS WEB/me2.png">
+
+<h2>ILUGO MACBETH</h2>
+
+<p>Creative Director & Co-Founder of Eagle Stars Film.</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3 style="color:gold;">EAGLE STARS FILM</h3>
+
+<p>Founded: 18th October, 2017</p>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/08087571352"
+target="_blank">
+Chat on WhatsApp
+</a>
+
+</body>
+</html>
+```
